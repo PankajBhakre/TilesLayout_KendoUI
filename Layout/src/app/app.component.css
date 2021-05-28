@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#mydiv{
+    position: absolute;
+    z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+}
+#mydivheader{
+    padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+event-log {
+    width: 100%;
+}
+kendo-tilelayout-item{
+    cursor: pointer;
+    height: 30px;
+    width: 100%;
+    border: 1px;
+    background-color: red;
+    position: relative;
+
+}

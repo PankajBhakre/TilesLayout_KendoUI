@@ -1,0 +1,31 @@
+<div id="mydiv">
+  <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+  <div id="mydivheader">Click here to move</div>
+  <p>Move</p>
+  <p>this</p>
+  <p>DIV</p>
+</div>
+
+<br>
+<kendo-tilelayout 
+      [columns]="3"
+      [gap]="10"
+      [rowHeight]="120"
+      [reorderable]="true"
+      [resizable]="true"
+      (reorder)="onReorder($event)"
+    >
+      <kendo-tilelayout-item title="TaskBox1">
+        <kendo-tilelayout-item-body (click) ="mouseEnter()">
+          <!-- <span *ngIf="iconVisible"></span> -->
+          Content 1 <i *ngIf="iconVisible" class="fa fa-trash"></i></kendo-tilelayout-item-body>
+      </kendo-tilelayout-item>
+
+      <kendo-tilelayout-item title="TaskBox 2">
+        <kendo-tilelayout-item-body (click) ="mouseEnter2()"> Content 2 <i *ngIf="iconVisible2" class="fa fa-trash"></i> </kendo-tilelayout-item-body>
+      </kendo-tilelayout-item>
+
+      <kendo-tilelayout-item title="TaskBox 3">
+        <kendo-tilelayout-item-body (click) ="mouseEnter3()"> Content 3 <i *ngIf="iconVisible3" class="fa fa-trash"></i> </kendo-tilelayout-item-body>
+      </kendo-tilelayout-item>
+    </kendo-tilelayout>
